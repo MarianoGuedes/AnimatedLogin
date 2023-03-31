@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  background: #1E1E1E;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer{
+  border: 8px solid #1E1E1E;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 15px rgba(255,255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.35),
+  inset -5px -5px 15px rgba(255,255, 255, 0.1),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.loginContainer .form{
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginContainer .form.signIn,
+.loginContainer.formsignIn .form.signUp{
+  display: none;
+}
+
+.loginContainer.formsignIn .form.signIn{
+  display: flex;
+}
+
+.loginContainer .form h2{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.loginContainer .form .boxInput{
+  width: 300px;
+  position: relative;
+}
+
+.loginContainer .form .boxInput input{
+  color: #fff;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  padding: 12px 10px 12px 48px;
+  font-size: 1em;
+  transition: 0.5s;
+  background: #1E1E1E;
+  font-weight: 300;
+  border-radius: 25px;
+  box-shadow: -5px -5px 15px rgba(255,255, 255,0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.loginContainer .form .boxInput span{
+  left: 0;
+  color: rgba(193,193,193 , 0.5);
+  padding: 12px 10px 12px 48px;
+  position: absolute;
+  font-size: 1em;
+  transition: 0.5s;
+  font-weight: 300;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+}
+
+.loginContainer .form .boxInput input:valid ~ span,
+.loginContainer .form .boxInput input:focus ~ span{
+  color: #C1C1C1;
+  border: 1px solid #C1C1C1;
+  padding: 0 8px;
+  font-size: 0.6em;
+  transform: translateX(25px) translateY(-7px);
+  background: #1E1E1E;
+  transition: 0.3s;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+.loginContainer .form .boxInput input:valid,
+.loginContainer .form .boxInput input:focus{
+  border: 1px solid #C1C1C1;
+}
+
+.loginContainer .form .boxInput i{
+  top: 15px;
+  left: 16px;
+  color: #E1E1E1;
+  width: 25px;
+  padding: 2px 0;
+  position: absolute;
+  border-right: 1px solid #E1E1E1;
+  padding-right: 8px;
+}
+
+.loginContainer .form .boxInput input[type="submit"]{
+  color: #1E1E1E;
+  cursor: pointer;
+  padding: 10px 0;
+  background: #C1C1C1;
+  font-weight: 500;
+  box-shadow: -5px -5px 15px rgba(255,255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.35),
+  inset -5px -5px 15px rgba(255,255, 255, 0.1),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.loginContainer .form p{
+  color: rgba(193,193,193 , 0.5);
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.loginContainer .form p a{
+  color: #C1C1C1;
+  font-weight: 500;
+}
